@@ -27,11 +27,11 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: rgb(248, 247, 246);
-  padding: 10px;
 }
 
 #intro {
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 fieldset {
@@ -39,13 +39,23 @@ fieldset {
   gap: 70px;
   justify-content: flex-start;
   background-color: white;
-  margin-bottom: 20px;
+  border: none;
+  margin: 0 0 20px 0;
+  box-shadow: 0 5px 2px rgb(219, 214, 214);
 }
 
 .left-form,
 .right-form {
   display: flex;
   flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.right-form {
+  justify-content: flex-end;
 }
 
 button  {
