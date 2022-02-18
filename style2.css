@@ -1,5 +1,5 @@
 :root {
-  --left-txt-color: aliceblue;
+  --light-txt-color: aliceblue;
 }
 
 body {
@@ -28,14 +28,14 @@ body {
   height: 70px;
   justify-content: center;
   align-items: center;
-  color: var(--left-txt-color);
+  color: var(--light-txt-color);
 }
 
 #img-credit {
   text-align: center;
   margin-bottom: 1vh;
   font-size: 0.8rem;
-  color: var(--left-txt-color);
+  color: var(--light-txt-color);
 }
 
 #right-side {
@@ -84,4 +84,14 @@ button  {
 
 #btn-contr {
   margin-left: 1.5rem;
+}
+
+button {
+  width: 180px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(11, 129, 133);
+  color: var(--light-txt-color);
+  font-weight: bold;
+  font-size: 0.8rem;
 }
