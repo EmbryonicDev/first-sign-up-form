@@ -26,3 +26,16 @@ body {
   display:flex;
   flex-direction: column;
 }
+
+fieldset {
+  display: flex;
+  gap: 70px;
+  justify-content: flex-start;
+
+}
+
+.left-form,
+.right-form {
+  display: flex;
+  flex-direction: column;
+}
