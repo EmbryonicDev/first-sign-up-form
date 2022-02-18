@@ -30,11 +30,16 @@ body {
   padding: 10px;
 }
 
+#intro {
+  margin-bottom: 20px;
+}
+
 fieldset {
   display: flex;
   gap: 70px;
   justify-content: flex-start;
   background-color: white;
+  margin-bottom: 20px;
 }
 
 .left-form,
