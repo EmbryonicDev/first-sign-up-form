@@ -71,7 +71,8 @@ fieldset {
 .right-form {
   display: flex;
   flex-direction: column;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
+  font-weight: 500;
 }
 
 .right-form {
