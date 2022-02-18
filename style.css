@@ -17,3 +17,9 @@ body {
   margin-left: 5vw;
   width: 100%;
 }
+
+#right-side {
+  display:flex;
+  flex-direction: column;
+  
+}
