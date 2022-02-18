@@ -47,3 +47,11 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
+
+button  {
+  margin-bottom: 20px;
+}
+
+#btn-contr {
+  margin-left: 25px;
+}
