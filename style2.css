@@ -48,6 +48,7 @@ body {
 #intro {
   margin-bottom: 20px;
   padding: 10px;
+  font-weight: 500;
 }
 
 fieldset {
@@ -73,20 +74,23 @@ fieldset {
   font-size: 0.65rem;
 }
 
-input {
-  margin-bottom: 0.8rem;
-}
-
 .right-form {
   justify-content: flex-end;
+}
+
+input {
+  margin-bottom: 0.8rem;
+  line-height: 1.2rem;
 }
 
 button  {
   margin-bottom: 1.2rem;
 }
 
+#intro,
+fieldset,
 #btn-contr {
-  margin-left: 1.5rem;
+  padding-left: 30px;
 }
 
 button {
