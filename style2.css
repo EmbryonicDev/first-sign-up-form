@@ -81,7 +81,21 @@ fieldset {
 
 input {
   margin-bottom: 0.8rem;
-  line-height: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+input:focus {
+  outline: none;
+  border: 1.5px solid blue;
+  border-radius: 2px;
+}
+
+#password:focus,
+#check-password:focus {
+  outline: none;
+  border: 1.5px solid red;
+  border-radius: 2px;
 }
 
 button  {
