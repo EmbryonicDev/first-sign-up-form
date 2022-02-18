@@ -18,8 +18,11 @@ body {
   width: 100%;
 }
 
+#logo-text  {
+  margin-top: 30vh;
+}
+
 #right-side {
   display:flex;
   flex-direction: column;
-  
 }
