@@ -33,12 +33,12 @@
           <div id="do-this">Let's Do This!</div>
           <div>
             <label for="first-name">*FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name" required>
+            <input type="text" id="first-name" name="first-name" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
           </div>
           
           <div>
             <label for="last-name">*LAST NAME</label>
-            <input type="text" id="last-name" name="last-name" required>
+            <input type="text" id="last-name" name="last-name" required pattern="^[a-zA-Z][a-zA-Z0-9-_\. ]{1,20}$">
           </div>
 
           <div>
@@ -47,13 +47,13 @@
           </div>
           
           <div>
-            <label for="phone">PHONE NUMBER</label>
-            <input type="tel" id="phone" name="phone">
+            <label for="phone">*PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phone" required pattern="\d{7,10}">
           </div>
 
           <div>
             <label for="passord">*PASSWORD</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
             <div id="psw-req">
               Password Requirements: <span id="upper-req">UpperCase, </span id=lower-req> <span>LowerCase, </span id=special-req>Number/SpecialChar <span></span><span id="eight-ch-req">and min 8 Chars</span>
             </div>
