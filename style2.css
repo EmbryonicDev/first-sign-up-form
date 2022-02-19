@@ -60,7 +60,7 @@ body {
 
 fieldset {
   display: flex;
-  gap: 70px;
+  gap: 60px;
   justify-content: flex-start;
   background-color: white;
   border: none;
