@@ -79,9 +79,11 @@ fieldset {
 }
 
 input {
+  border: #E5E7EB solid;
+  border-radius: 2px;
   margin-bottom: 0.8rem;
   font-size: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 
 #password {
