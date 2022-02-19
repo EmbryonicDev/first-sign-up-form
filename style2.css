@@ -21,16 +21,21 @@ body {
   width: 100%;
 }
 
+#logo {
+  height: 65px;
+}
+
 #logo-text  {
   font-family: "ZCOOL KuaiLe";
-  font-size: 2rem;
+  font-size: 2.2rem;
   display: flex;
   margin-top: 30vh;
   background-color: rgb(0, 0, 0, 0.5);
-  height: 70px;
+  height: 75px;
   justify-content: center;
   align-items: center;
   color: var(--light-txt-color);
+  gap: 7.5px;
 }
 
 #img-credit {
