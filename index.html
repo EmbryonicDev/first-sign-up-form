@@ -54,12 +54,16 @@
           <div>
             <label for="passord">*PASSWORD</label>
             <input type="password" id="password" name="password" required>
+            <div id="psw-req">
+              Password Requirements: <span id="upper-req">UpperCase, </span id=lower-req> <span>LowerCase, </span id=special-req>Number/SpecialChar <span></span><span id="eight-ch-req">and min 8 Chars</span>
+            </div>
           </div>
           
           <div>
             <label for="check-password">*CONFIRM PASSWORD</label>
             <input type="password" id="check-password" name="check-password" required>
           </div>
+  
         </fieldset>
         <div id="btn-contr">
           <button type="submit">Create Account</button>

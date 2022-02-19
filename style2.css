@@ -84,6 +84,10 @@ input {
   line-height: 1.3rem;
 }
 
+#password {
+  margin-bottom: 0.1rem;
+}
+
 input:focus {
   outline: none;
   border: 1.5px solid blue;
@@ -96,6 +100,10 @@ input:focus {
   outline: none;
   border: 1.5px solid red;
   border-radius: 2px;
+}
+
+#psw-req {
+
 }
 
 button  {
