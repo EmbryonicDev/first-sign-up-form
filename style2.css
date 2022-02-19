@@ -64,7 +64,7 @@ fieldset {
   justify-content: flex-start;
   background-color: white;
   border: none;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
   box-shadow: 0 5px 2px rgb(219, 214, 214);
 }
 
