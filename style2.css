@@ -98,7 +98,7 @@ input:focus {
 }
 
 #password:focus,
-#check-password:focus {
+#checkPsw:focus {
   outline: none;
   border: 1.5px solid red;
   border-radius: 2px;
