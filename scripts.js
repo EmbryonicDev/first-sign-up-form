@@ -6,7 +6,6 @@ const specialReq = document.getElementById("specialReq");
 const pswReqText = document.getElementById('pswReq');
 const charLen = document.getElementById('charLen');
 const pswMatch = document.getElementById('pswMatch');
-const submitBtn = document.getElementById('submitBtn');
 const form = document.getElementsByTagName('form')[0];
 
 password.addEventListener('keyup', () => {
