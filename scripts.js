@@ -8,7 +8,8 @@ const charLen = document.getElementById('charLen');
 const pswMatch = document.getElementById('pswMatch');
 const form = document.getElementsByTagName('form')[0];
 
-password.addEventListener('keyup', () => {
+password.addEventListener('input', () => {
+  // Add styling to highlight password requirements that have been met
   // ↓ Ternary Operators Used ↓
   (/[a-z]/.test(password.value)) ? 
     lowerReq.style.cssText = "background-color: green; color: white" : 
@@ -27,7 +28,7 @@ password.addEventListener('keyup', () => {
     charLen.style.cssText = "background-color: none; color: black";
 })
 
-checkPsw.addEventListener('keyup', () => {
+checkPsw.addEventListener('input', () => {
   if(checkPsw.value != password.value) {
     pswMatch.innerText = "*Passwords do not Match";
     pswMatch.style.cssText = "color: red";
