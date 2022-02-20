@@ -1,11 +1,11 @@
 const password = document.querySelector('#password');
-const checkPsw = document.querySelector('#checkPwd');
+const checkPsw = document.querySelector('#checkPsw');
 const lowerReq = document.getElementById("lowerReq");
 const upperReq = document.getElementById("upperReq");
 const specialReq = document.getElementById("specialReq");
 const pswReqText = document.getElementById('pswReq');
 const charLen = document.getElementById('charLen');
-
+const pswMatch = document.getElementById('pswMatch');
 
 password.addEventListener('keyup', () => {
   // ↓ Ternary Operators Used ↓
@@ -26,4 +26,13 @@ password.addEventListener('keyup', () => {
     charLen.style.cssText = "background-color: none; color: black";
 
     console.log(password.value)
+})
+
+checkPsw.addEventListener('keyup', () => {
+  if(checkPsw.value != password.value) {
+    pswMatch.innerText = "*Passwords do not Match";
+  } else {
+    pswMatch.innerText = "Passwords Match ✔️";
+    pswMatch.style.cssText = "color: green";
+  }
 })
