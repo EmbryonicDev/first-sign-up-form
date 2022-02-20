@@ -105,8 +105,8 @@ input:focus {
   border-radius: 2px;
 }
 
-#psw-req {
-
+#pswReqTxt{
+  color: blue;
 }
 
 #btn-contr  {
