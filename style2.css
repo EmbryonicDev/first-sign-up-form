@@ -3,12 +3,12 @@
 }
 
 body {
-  background-image: url(./mosiac.jpg);
   margin: 0;
   padding: 0;
 }
 
 .container {
+  background-image: url(./mosiac.jpg);
   display: flex;
   width: 100vw;
   height: 100vh;
