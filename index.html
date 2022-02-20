@@ -32,27 +32,27 @@
       <form action="#">
         <fieldset>
           <div id="doThis">Let's Do This!</div>
-          <div>
+          <div class="fieldsetDiv">
             <label for="firstName">*FIRST NAME</label>
             <input type="text" id="firstName" name="firstName" required pattern="^[a-zA-Z][0-9a-zA-Z .,'-]{2,20}$">
           </div>
           
-          <div>
+          <div class="fieldsetDiv">
             <label for="lastName">*LAST NAME</label>
             <input type="text" id="lastName" name="lastName" required pattern="^[a-zA-Z][a-zA-Z0-9-_\. ]{2,20}$">
           </div>
 
-          <div>
-            <label for="email">*EMAIL ADDRESS</label>
+          <div class="fieldsetDiv">
+            <label for="email">*EMAIL</label>
             <input type="email" id="email" name="'email" required>
           </div>
           
-          <div>
+          <div class="fieldsetDiv">
             <label for="phone">*PHONE NUMBER</label>
             <input type="tel" id="phone" name="phone" required pattern="\d{7,10}">
           </div>
 
-          <div>
+          <div class="fieldsetDiv">
             <label for="passord">*PASSWORD</label>
             <input type="password" id="password" name="password" required pattern="(?=^.{8,20}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
             <div id="pswReqTxt">
@@ -60,7 +60,7 @@
             </div>
           </div>
           
-          <div>
+          <div class="fieldsetDiv">
             <label for="checkPsw">*CONFIRM PASSWORD</label>
             <input type="password" id="checkPsw" name="checkPsw" required>
             <div id="pswMatch"></div>

@@ -78,6 +78,11 @@ fieldset {
   font-size: 1.2rem;
 }
 
+.fieldsetDiv {
+  display: flex;
+  flex-direction: column;
+}
+
 input {
   border: #E5E7EB solid;
   border-radius: 2px;
