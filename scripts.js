@@ -3,7 +3,7 @@ const checkPwd = document.querySelector('#checkPwd');
 const lowerReq = document.getElementById("lowerReq");
 const upperReq = document.getElementById("upperReq");
 const specialReq = document.getElementById("specialReq");
-const pswReq = document.getElementById('pswReq');
+const pswReqText = document.getElementById('pswReq');
 const charLen = document.getElementById('charLen');
 
 password.addEventListener('keyup', () => {
@@ -23,4 +23,6 @@ password.addEventListener('keyup', () => {
   (password.value.length >= 8 && password.value.length <= 20)  ?
     charLen.style.cssText = "background-color: green; color: white" :
     charLen.style.cssText = "background-color: none; color: black";
+
+    console.log(password.value)
 })
