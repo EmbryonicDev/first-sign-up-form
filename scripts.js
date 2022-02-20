@@ -1,10 +1,11 @@
 const password = document.querySelector('#password');
-const checkPwd = document.querySelector('#checkPwd');
+const checkPsw = document.querySelector('#checkPwd');
 const lowerReq = document.getElementById("lowerReq");
 const upperReq = document.getElementById("upperReq");
 const specialReq = document.getElementById("specialReq");
 const pswReqText = document.getElementById('pswReq');
 const charLen = document.getElementById('charLen');
+
 
 password.addEventListener('keyup', () => {
   // ↓ Ternary Operators Used ↓
