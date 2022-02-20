@@ -94,6 +94,8 @@ input {
 #password, 
 #checkPsw {
   margin-bottom: 0.1rem;
+  border: 1.5px solid red;
+  border-radius: 2px;
 }
 
 input:focus {
@@ -101,13 +103,6 @@ input:focus {
   border: 1.5px solid blue;
   border-radius: 2px;
   box-shadow: 2.5px 2.5px 2.5px rgb(187, 183, 183);
-}
-
-#password:focus,
-#checkPsw:focus {
-  outline: none;
-  border: 1.5px solid red;
-  border-radius: 2px;
 }
 
 #pswReqTxt{
