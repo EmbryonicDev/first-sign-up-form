@@ -86,7 +86,8 @@ input {
   line-height: 1.5rem;
 }
 
-#password {
+#password, 
+#checkPsw {
   margin-bottom: 0.1rem;
 }
 
