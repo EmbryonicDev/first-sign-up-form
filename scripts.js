@@ -26,10 +26,23 @@ password.addEventListener('input', () => {
   (password.value.length >= 8 && password.value.length <= 20)  ?
     charLen.style.cssText = "background-color: green; color: white" :
     charLen.style.cssText = "background-color: none; color: black";
+
+  // Update psw.Match.innerText if when confirm password !=""
+  (checkPsw.value != "") ? pswCompare() : pswMatch.innerText = "";
 })
 
-checkPsw.addEventListener('input', () => {
+function pswCompare() {
   if(checkPsw.value != password.value) {
+    pswMatch.innerText = "*Passwords do not Match";
+    pswMatch.style.cssText = "color: red";
+  } else {
+    pswMatch.innerText = "Passwords Match ✔️";
+    pswMatch.style.cssText = "color: green";
+  }
+}
+
+checkPsw.addEventListener('input', () => {
+  if(checkPsw.value != password.value && checkPsw.value != '') {
     pswMatch.innerText = "*Passwords do not Match";
     pswMatch.style.cssText = "color: red";
   } else {
