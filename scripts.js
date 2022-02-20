@@ -6,6 +6,8 @@ const specialReq = document.getElementById("specialReq");
 const pswReqText = document.getElementById('pswReq');
 const charLen = document.getElementById('charLen');
 const pswMatch = document.getElementById('pswMatch');
+const submitBtn = document.getElementById('submitBtn');
+const form = document.getElementsByTagName('form')[0];
 
 password.addEventListener('keyup', () => {
   // ↓ Ternary Operators Used ↓
@@ -24,15 +26,21 @@ password.addEventListener('keyup', () => {
   (password.value.length >= 8 && password.value.length <= 20)  ?
     charLen.style.cssText = "background-color: green; color: white" :
     charLen.style.cssText = "background-color: none; color: black";
-
-    console.log(password.value)
 })
 
 checkPsw.addEventListener('keyup', () => {
   if(checkPsw.value != password.value) {
     pswMatch.innerText = "*Passwords do not Match";
+    pswMatch.style.cssText = "color: red";
   } else {
     pswMatch.innerText = "Passwords Match ✔️";
     pswMatch.style.cssText = "color: green";
   }
 })
+
+form.addEventListener('submit', function (e) {
+  if(checkPsw.value != password.value) {
+    checkPsw.setCustomValidity("Passwords Must to Match!");
+    e.preventDefault();
+  }
+});
