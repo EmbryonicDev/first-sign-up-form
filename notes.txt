@@ -1,0 +1,3 @@
+-add custom messages to each input field if validation is not valid
+-make mobile friendly
+-right side bottom does not line up with left side bottom when window height is reduced
