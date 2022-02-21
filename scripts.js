@@ -42,7 +42,7 @@ function pswCompare() {
 }
 
 checkPsw.addEventListener('input', () => {
-  if(checkPsw.value != password.value && checkPsw.value != '') {
+  if(checkPsw.value != password.value) {
     pswMatch.innerText = "*Passwords do not Match";
     pswMatch.style.cssText = "color: red";
   } else {
