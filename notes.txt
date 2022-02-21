@@ -1,3 +1,4 @@
 -add custom messages to each input field if validation is not valid
 -make mobile friendly
--right side bottom does not line up with left side bottom when window height is reduced
+-fix: left side bottom does not line up with right side bottom when window height is reduced
+-Use advanced selectors to remove classes / IDs wherever possible
