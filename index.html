@@ -29,49 +29,51 @@
         <p>You <em>know</em> you want to.</p>
         
       </div>
-      <form action="#">
-        <fieldset>
-          <div id="doThis">Let's Do This!</div>
-          <div class="fieldsetDiv">
-            <label for="firstName">*FIRST NAME</label>
-            <input type="text" id="firstName" name="firstName" required pattern="^[a-zA-Z][0-9a-zA-Z .,'-]{1,20}$">
-          </div>
-          
-          <div class="fieldsetDiv">
-            <label for="lastName">*LAST NAME</label>
-            <input type="text" id="lastName" name="lastName" required pattern="^[a-zA-Z][a-zA-Z0-9-_\. ]{2,20}$">
-          </div>
-
-          <div class="fieldsetDiv">
-            <label for="email">*EMAIL</label>
-            <input type="email" id="email" name="'email" required>
-          </div>
-          
-          <div class="fieldsetDiv">
-            <label for="phone">*PHONE NUMBER</label>
-            <input type="tel" id="phone" name="phone" required pattern="\d{7,10}">
-          </div>
-
-          <div class="fieldsetDiv">
-            <label for="passord">*PASSWORD</label>
-            <input type="password" id="password" name="password" required pattern="(?=^.{8,20}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
-            <div id="pswReqTxt">
-              Password Requirements: <span id="upperReq">UpperCase, </span> <span id="lowerReq">LowerCase, </span><span id=specialReq>Number/SpecialChar </span><span id="charLen">and min 8 Chars</span>
+      <div class="formWrapper">
+        <form action="#">
+          <fieldset>
+            <div id="doThis">Let's Do This!</div>
+            <div class="fieldsetDiv">
+              <label for="firstName">*FIRST NAME</label>
+              <input type="text" id="firstName" name="firstName" required pattern="^[a-zA-Z][0-9a-zA-Z .,'-]{1,20}$">
             </div>
+            
+            <div class="fieldsetDiv">
+              <label for="lastName">*LAST NAME</label>
+              <input type="text" id="lastName" name="lastName" required pattern="^[a-zA-Z][a-zA-Z0-9-_\. ]{2,20}$">
+            </div>
+
+            <div class="fieldsetDiv">
+              <label for="email">*EMAIL</label>
+              <input type="email" id="email" name="'email" required>
+            </div>
+            
+            <div class="fieldsetDiv">
+              <label for="phone">*PHONE NUMBER</label>
+              <input type="tel" id="phone" name="phone" required pattern="\d{7,10}">
+            </div>
+
+            <div class="fieldsetDiv">
+              <label for="passord">*PASSWORD</label>
+              <input type="password" id="password" name="password" required pattern="(?=^.{8,20}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+              <div id="pswReqTxt">
+                Password Requirements: <span id="upperReq">UpperCase, </span> <span id="lowerReq">LowerCase, </span><span id=specialReq>Number/SpecialChar </span><span id="charLen">and min 8 Chars</span>
+              </div>
+            </div>
+            
+            <div class="fieldsetDiv">
+              <label for="checkPsw">*CONFIRM PASSWORD</label>
+              <input type="password" id="checkPsw" name="checkPsw" required>
+              <div id="pswMatch"></div>
+            </div>
+    
+          </fieldset>
+          <div id="btnContr">
+            <button type="submit">Create Account</button>
+            <div id="memberLogin">Already Have an Account? <a href="">Log in here</a></div>
           </div>
-          
-          <div class="fieldsetDiv">
-            <label for="checkPsw">*CONFIRM PASSWORD</label>
-            <input type="password" id="checkPsw" name="checkPsw" required>
-            <div id="pswMatch"></div>
-          </div>
-  
-        </fieldset>
-        <div id="btnContr">
-          <button type="submit">Create Account</button>
-          <div id="memberLogin">Already Have an Account? <a href="">Log in here</a></div>
-        </div>
-      </form>
+        </form>
+      </div> 
     </div>
   </div>
 
